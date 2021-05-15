@@ -257,6 +257,53 @@ section .title::after {
   font-weight: 50;
   margin: 10px 0 7px 0;
 }
+/*-------------------owl carousel control--------------------*/
+.owl-prev {
+  width: auto;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  left: -25px;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-next {
+  width: 15px;
+  height: 100px;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  display: block !important;
+  border: 0px solid black;
+}
+.owl-prev i,
+.owl-next i {
+  transform: scale(1, 1);
+  color: #ccc;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background-color: crimson !important;
+}
 /*---------------responsive media query start--------------*/
 @media (max-width: 1300px) {
   .home .max-width {
@@ -355,14 +402,4 @@ section .title::after {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }

@@ -21,7 +21,6 @@ $(document).ready(function() {
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav: true,
-	    dots: true,
         responsiveClass:true,
 	    items: 1,
         autoplayHoverPause:true,
@@ -36,7 +35,6 @@ $(document).ready(function() {
             },
             1000:{
                 items:3,
-                loop:true
             }
         }
     });
