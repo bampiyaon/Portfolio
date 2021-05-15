@@ -6,11 +6,6 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
 /*--------------------navbar section--------------------*/
 .navbar {
   position: fixed;
@@ -119,15 +114,16 @@
   color: crimson;
   background-color: transparent; /*or can use unset instead*/
 }
-
-/*-----------------About Section Styling-----------------*/
+/*----------------- all similar content styling code -----------------*/
 section {
   padding: 100px 0; /*add space above title*/
 }
-.about {
-  font-family: "Poppins", sans-serif;
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
-.about .title {
+section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -136,8 +132,8 @@ section {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
-.about .title::before {
-  /*a line under About me*/
+section .title::before {
+  /*a line under About me and other section*/
   content: "";
   position: absolute;
   bottom: 0px;
@@ -147,9 +143,7 @@ section {
   background-color: #111;
   transform: translateX(-50%);
 }
-.about .title::after {
-  /*who i am text*/
-  content: "who i am";
+section .title::after {
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -158,6 +152,15 @@ section {
   padding: 5px;
   background-color: #fff;
   transform: translateX(-50%);
+}
+.about,
+.projects {
+  font-family: "Poppins", sans-serif;
+}
+
+/*-----------------About Section Styling-----------------*/
+.about .title::after {
+  content: "who i am";
 }
 .about .about-content {
   display: flex;
@@ -203,6 +206,56 @@ section {
 .about .about-content .right a:hover {
   color: crimson;
   background-color: transparent;
+}
+/*---------------project section styling--------------*/
+.projects {
+  color: #ffffff;
+  background-color: #111;
+}
+.projects .title::before {
+  background-color: #fff;
+}
+.projects .title:after {
+  content: "Hello";
+  background-color: #111;
+}
+.projects .owl-carousel .project-card {
+  background-color: #222;
+  border-radius: 6px;
+  padding: 10px 15px 0 10px;
+  text-align: center;
+  /**/
+  background-position: top;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.projects .owl-carousel .project-card .box-1 {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 550px;
+  height: 400px;
+  background-color: #fff;
+  transition: ease-in-out 8s;
+  background-image: url(../img/my-project-1.jpg);
+  background-size: cover;
+}
+.projects .owl-carousel .project-card .box-1:hover,
+.projects .owl-carousel .project-card .box-2:hover,
+.projects .owl-carousel .project-card .box-3:hover,
+.projects .owl-carousel .project-card .box-4:hover,
+.projects .owl-carousel .project-card .box-5:hover {
+  background-position: bottom;
+}
+.projects .owl-carousel .card img {
+  object-fit: cover;
+}
+.projects .owl-carousel .card .text {
+  font-size: 25px;
+  font-weight: 50;
+  margin: 10px 0 7px 0;
 }
 /*---------------responsive media query start--------------*/
 @media (max-width: 1300px) {
@@ -302,4 +355,14 @@ section {
   .home .home-content .text-3 {
     font-size: 27px;
   }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
