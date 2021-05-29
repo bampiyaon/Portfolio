@@ -36,7 +36,7 @@ $(document).ready(function() {
     // owl carousel script
     $('.owl-carousel').owlCarousel({
         loop: true,
-	    autoplay: false,
+	    autoplay: true,
 	    margin: 20,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
@@ -59,6 +59,7 @@ $(document).ready(function() {
             },
         }
     });
+
     function sendMail()  {
         // const name = $('#name').value();
         // const email = $('#email').value();
