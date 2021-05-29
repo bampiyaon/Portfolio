@@ -395,7 +395,7 @@ footer {
 }
 /*---------------skills section start--------------*/
 .skills .title::after {
-  content: "what tools i use";
+  content: "my experience";
   background-color: #fbf8ef;
 }
 /*---------------contact section start--------------*/
