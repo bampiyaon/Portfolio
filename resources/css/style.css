@@ -281,12 +281,18 @@ footer {
   justify-content: center;
   background-color: transparent;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 15px;
   margin-top: 20px;
   border-radius: 6px;
   border: 2px solid #fff;
   transition: all 0.3s ease;
+  display: block;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .projects .project-card a:hover {
   color: #000;
@@ -307,19 +313,6 @@ footer {
 .project-button-wrap {
   display: flex;
   align-items: flex-end;
-}
-.projects .project-card a {
-  display: block;
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  align-items: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 12px 24px;
-  font-size: 14px;
-  /* float: right; */
 }
 .badge {
   display: inline-block;
