@@ -121,24 +121,28 @@ html {
   position: fixed;
   height: 45px;
   width: 42px;
-  background-color: #fca71f;
+  background: #fca71f;
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  z-index: 999;
+  color: #fff;
+  z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
-  color: #fff;
+  border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3x ease;
+  transition: all 0.3s ease;
 }
 .scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
-  pointer-events: none;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
 }
 /*----------------- all similar content styling code -----------------*/
 section {
@@ -251,7 +255,7 @@ footer {
 .projects .owl-carousel .project-card {
   background-color: #222;
   border-radius: 6px;
-  /* padding: 10px; */
+  padding: 10px;
 }
 .projects .owl-carousel .project-card .box {
   width: 550px;
@@ -587,11 +591,33 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .right form .error-box {
+    width: 150px;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
   }
 }

@@ -75,7 +75,7 @@
                                 Web Design
                             </div>
                         </div>
-                        <a href="#">View Project</a>
+                        <a href="https://www.figma.com/proto/fDmGelJpToAE0LYtghb0Uj/Movie-Streaming?node-id=2%3A1&scaling=min-zoom">View Project</a>
                 </div>
                 <div class="project-card">
                     <div class="box-2">
@@ -142,23 +142,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" class="fullname" placeholder="Name">
+                                <input type="text" class="fullname" placeholder="Name" id="name">
                             </div>
                             <div class="field email">
-                                <input type="text" class="email-input" placeholder="Email">
+                                <input type="text" class="email-input" placeholder="Email" id="email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" class="subject" placeholder="Subject">
+                            <input type="text" class="subject" placeholder="Subject" id="subject">
                         </div>
                         <div class="field textarea">
-                            <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                            <textarea class="message" cols="30" rows="10" placeholder="Message.." id="message"></textarea>
                         </div>
                         <div class="button-area">
-                            <button class="send-msg" type="submit" name="send">Send message</button>
+                            <button class="send-msg" type="submit" value="send" onclick="sendMail()">Send message</button>
                         </div>
                     </form>
                 </div>
@@ -170,5 +170,8 @@
         <span>Created By <a href="#">bamwhale</a> | <span class="far fa-copyright"></span>2021 All rights reserved.</span>
     </footer>
     <script src="resources/js/script.js"></script>
+    <script>
+    
+    </script>
 </body>
 </html>
