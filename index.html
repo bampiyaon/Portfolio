@@ -210,9 +210,9 @@
                             <div class="field name">
                                 <input type="text" class="fullname" placeholder="Name" id="name">
                             </div>
-                            <div class="field email">
-                                <input type="text" class="email-input" placeholder="Email" id="email">
-                            </div>
+                            <!-- <div class="field email"> -->
+                                <!-- <input type="text" class="email-input" placeholder="Email" id="email"> -->
+                            <!-- </div> -->
                         </div>
                         <div class="field">
                             <input type="text" class="subject" placeholder="Subject" id="subject">
@@ -234,7 +234,12 @@
     </footer>
     <script src="resources/js/script.js"></script>
     <script>
-    
+        const sendMail = () => {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const subject = document.getElementById('subject').value;
+            window.open(`mailto:ppiluntasopon@gmail.com?subject=${subject}&body=${message}`);
+        }
     </script>
 </body>
 </html>

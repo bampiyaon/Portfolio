@@ -59,23 +59,4 @@ $(document).ready(function() {
             },
         }
     });
-
-    function sendMail()  {
-        // const name = $('#name').value();
-        // const email = $('#email').value();
-        const subject = $('#subject').value();
-        const message = $('#message').value();
-        window.open(`mailto:ppiluntasopon?subject=${subject}&body=${message}`);
-    }
-
-        function generateEmail() {
-            var emailTo = $("#teamName").val();
-            var emailCC = $("#CC").val();
-            var emailSubject = "Escalation Request - Ticket #: " + $("#ticketNumber").val();
-            var emailBody = "Issue: " + $("#issue").val() + "%0A%0AContact info: " + $("#contactInformation").val() + "%0A%0ARequested action: " + $(".requestedAction:checked").val();
-            location.href = "mailto:" + emailTo + "?" + 
-              (emailCC ? "cc=" + emailCC : "") + 
-              (emailSubject ? "&subject=" + emailSubject : "") + 
-              (emailBody ? "&body=" + emailBody : "");
-          }
 });
