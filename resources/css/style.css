@@ -59,7 +59,7 @@ html {
 }
 .navbar.sticky li a:link,
 .navbar.sticky li a:visited {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   padding: 5px 0;
@@ -69,7 +69,7 @@ html {
   border-bottom: 2px solid #fff;
 }
 .menu-btn {
-  color: #fff;
+  color: #000;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -538,7 +538,7 @@ hr {
 }
 /*---------------footer section styling--------------*/
 footer {
-  background-color: #111;
+  background-color: #fbf8ef;
   padding-top: 20px 23px;
   color: #fff;
   text-align: center;
@@ -583,7 +583,7 @@ footer span a:hover {
     width: 100%;
     left: -100%; /*make menu disappear then hamburger menu appear instead*/
     top: 0;
-    background-color: #111;
+    background-color: #fbf8ef;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -610,7 +610,7 @@ footer span a:hover {
     padding: 10px 30px;
   }
   .max-width {
-    max-width: 800px;
+    max-width: 930;
   }
   .about .about-content .column {
     width: 100%;
