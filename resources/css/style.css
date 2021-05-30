@@ -198,7 +198,6 @@ footer {
   background-color: #fbf8ef;
 }
 .about .about-content,
-.skills .skills-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -394,9 +393,56 @@ footer {
   background-color: #fca71f !important;
 }
 /*---------------skills section start--------------*/
-.skills .title::after {
+section .title-h2 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title-h2::before {
+  /*a line under About me and other section*/
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: #111;
+  transform: translateX(-50%);
+}
+section .title-h2::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: #fca71f;
+  padding: 5px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+.skills .title-h2::after {
   content: "my experience";
   background-color: #fbf8ef;
+}
+.skills img {
+  width: auto;
+  height: 120px;
+  padding: 0 30px 0 30px;
+}
+.skills .skills-content .lang-framework,
+.skills .skills-content .tools {
+  text-align: center;
+}
+.skills .skills-content .subtitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+.skills .skills-content h3 {
+  padding-bottom: 20px;
+  margin-bottom: 26px;
 }
 /*---------------contact section start--------------*/
 .contact .title:after {
