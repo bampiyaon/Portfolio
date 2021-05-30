@@ -104,6 +104,7 @@ html {
   font-weight: 500;
 }
 .home .home-content i {
+  /*link button in hime section*/
   font-size: 36px;
   padding: 8px 10px;
 }
@@ -538,7 +539,7 @@ hr {
 }
 /*---------------footer section styling--------------*/
 footer {
-  background-color: #fbf8ef;
+  background-color: rgb(39, 39, 39);
   padding-top: 20px 23px;
   color: #fff;
   text-align: center;
@@ -607,7 +608,7 @@ footer span a:hover {
   }
   .home .home-content a {
     font-size: 23px;
-    padding: 10px 30px;
+    padding: 7px;
   }
   .max-width {
     max-width: 930;
@@ -627,6 +628,11 @@ footer span a:hover {
     width: 100%;
     margin-bottom: 35px;
   }
+  .skills img {
+    width: auto;
+    height: 85px;
+    padding: 0 30px 0 30px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -641,6 +647,11 @@ footer span a:hover {
   }
   .home .home-content a {
     font-size: 20px;
+  }
+  .skills img {
+    width: auto;
+    height: 75px;
+    padding: 0 20px;
   }
 }
 
@@ -672,5 +683,10 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+  .skills img {
+    width: auto;
+    height: 65px;
+    padding: 0 15px;
   }
 }
