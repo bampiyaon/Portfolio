@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyaon Portfolio</title>
+    <meta name="description" content="This portfolio is made with care by Piyaon Piluntasopon.">
+
+    <title>Piyaon - Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/memoji_thumbsup.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/memoji_thumbsup.png">
+
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -238,7 +243,7 @@
             const name = document.getElementById('name').value;
             const message = document.getElementById('message').value;
             const subject = document.getElementById('subject').value;
-            window.open(`mailto:ppiluntasopon@gmail.com?subject=${subject}&body=${message}`);
+            window.open(`mailto:ppiluntasopon@gmail.com?subject=${subject}&body=${message + ' from ' + name}`);
         }
     </script>
 </body>
