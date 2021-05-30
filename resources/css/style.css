@@ -258,7 +258,7 @@ footer {
   background-color: #fff;
 }
 .projects .title:after {
-  content: "Hello";
+  content: "my experience";
   background-color: #111;
 }
 .projects .owl-carousel .project-card {
@@ -329,12 +329,6 @@ footer {
   padding: 5px 7px;
   border-radius: 8px;
   background-color: #d8d5d1;
-}
-.badge-blue {
-  display: inline-block;
-  padding: 5px 7px;
-  border-radius: 8px;
-  background-color: #6cb2d1;
 }
 .badge-text {
   color: #000;
@@ -424,7 +418,7 @@ section .title-h2::after {
   transform: translateX(-50%);
 }
 .skills .title-h2::after {
-  content: "my experience";
+  content: "what i use";
   background-color: #fbf8ef;
 }
 .skills img {
@@ -445,6 +439,13 @@ section .title-h2::after {
   margin-bottom: 26px;
 }
 /*---------------contact section start--------------*/
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: #bebebe;
+  opacity: 70%;
+  margin: 0 90px;
+}
 .contact .title:after {
   content: "get in touch me";
   background-color: #fbf8ef;
