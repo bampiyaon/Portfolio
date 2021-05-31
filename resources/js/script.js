@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $(window).scroll(function() {
-        /// sticky navbar on scroll script
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active"); //to make hamburger menu click function
+        $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
