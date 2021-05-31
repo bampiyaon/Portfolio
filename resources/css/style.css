@@ -104,7 +104,7 @@ html {
   font-weight: 500;
 }
 .home .home-content i {
-  /*link button in hime section*/
+  /*link button in home section*/
   font-size: 36px;
   padding: 8px 10px;
 }
@@ -601,8 +601,11 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
+  .navbar .logo a {
+    font-size: 32px;
+  }
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 60px;
   }
   .home .home-content .text-3 {
     font-size: 35px;
@@ -610,6 +613,10 @@ footer span a:hover {
   .home .home-content a {
     font-size: 23px;
     padding: 7px;
+  }
+  .home .home-content i {
+    font-size: 36px;
+    padding: 1px 3px;
   }
   .max-width {
     max-width: 930px;
@@ -640,11 +647,14 @@ footer span a:hover {
   .max-width {
     padding: 0 23px; /*add space on the left when increase screen size*/
   }
+  .navbar .logo a {
+    font-size: 30px;
+  }
   .home .home-content .text-2 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .home .home-content .text-3 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .home .home-content a {
     font-size: 20px;
@@ -658,10 +668,13 @@ footer span a:hover {
 
 @media (max-width: 500px) {
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .navbar .logo a {
+    font-size: 28px;
   }
   .about .about-content .right .text,
   .skills .skills-content .left .text {
