@@ -233,6 +233,7 @@ footer {
 }
 .about .about-content .right p {
   text-align: justify;
+  word-break: keep-all;
 }
 .about .about-content .right a {
   display: inline-block;
