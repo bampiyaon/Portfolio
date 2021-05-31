@@ -47,6 +47,7 @@ html {
 }
 /*navbar class menu list link*/
 .navbar .menu li a {
+  display: block;
   color: #000;
   font-size: 18px;
   font-weight: 500;
