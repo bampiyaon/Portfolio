@@ -23,7 +23,6 @@ html {
 .navbar.sticky {
   padding: 15px 0;
   background-color: #fca71f;
-  color: green;
 }
 .navbar .max-width {
   display: flex;
@@ -611,7 +610,7 @@ footer span a:hover {
     padding: 7px;
   }
   .max-width {
-    max-width: 930;
+    max-width: 930px;
   }
   .about .about-content .column {
     width: 100%;
